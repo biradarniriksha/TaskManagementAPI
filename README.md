@@ -137,3 +137,48 @@ You can test the API using **Swagger UI**.
 - Serilog is used for logging errors.
 - Global Exception Handling ensures better error response and avoids crashes
 
+# Task Management API - Test Suite
+
+## Test Overview
+
+This test suite validates the core functionality of the Task Management API using xUnit and Moq with an in-memory database.
+
+##  Test Cases
+
+### Task Controller Tests
+
+| Test Method | Description | Assertions |
+|-------------|-------------|------------|
+| `GetTaskById_ReturnsTask_WhenExists` | Verifies successful task retrieval | Returns 200 OK with correct task |
+| `GetTaskById_ReturnsNotFound_WhenNotExists` | Tests missing task handling | Returns 404 Not Found |
+| `CreateTask_ReturnsCreatedResult_WhenValid` | Validates task creation | Returns 201 Created, verifies DB count |
+| `GetTasksByUserId_ReturnsFilteredResults` | Checks user-specific task filtering | Returns correct task count for user |
+| `CreateTask_ReturnsBadRequest_WhenInvalid` | Tests validation for empty title | Returns 400 Bad Request |
+| `GetTasksByUserId_ReturnsEmpty_WhenNoTasksExist` | Verifies empty result handling | Returns empty list |
+
+
+## Running Tests
+### Prerequisites
+.NET 6.0+ SDK
+
+IDE with test runner (VS, VS Code, Rider)
+
+## Test Dependencies
+dotnet add TaskManagementAPI.Tests package Microsoft.EntityFrameworkCore.InMemory --version 6.0.0
+dotnet add TaskManagementAPI.Tests package Moq --version 4.16.1
+dotnet add TaskManagementAPI.Tests package xunit --version 2.4.1
+dotnet add TaskManagementAPI.Tests package xunit.runner.visualstudio --version 2.4.1
+dotnet add TaskManagementAPI.Tests package coverlet.collector --version 3.2.0
+
+Execute Tests
+bash
+## Run all tests
+dotnet test
+
+## Run specific test class
+dotnet test --filter "FullyQualifiedName~TaskControllerTests"
+
+## Generate coverage report
+dotnet test --collect:"XPlat Code Coverage"
+
+
