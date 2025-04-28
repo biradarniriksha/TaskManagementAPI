@@ -132,7 +132,7 @@ You can test the API using **Swagger UI**.
 
 - This project uses **Entity Framework Core** for database interactions.
 - Role management is done using [Authorize(Roles = "RoleName")] attributes.
-- JWT authentication is set up with basic middleware in `Startup.cs`.
+- JWT authentication is set up with basic middleware in `Program.cs`.
 - Seed data is included for initial testing purposes (tasks and users).
 - Serilog is used for logging errors.
 - Global Exception Handling ensures better error response and avoids crashes
