@@ -1,0 +1,729 @@
+2025-04-27 17:26:19.183 +05:30 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2025-04-27 17:26:19.471 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 17:26:19.477 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 17:26:19.481 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 17:26:19.483 +05:30 [INF] Hosting environment: Development
+2025-04-27 17:26:19.484 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 17:26:20.664 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - null null
+2025-04-27 17:26:20.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - 301 0 null 217.44ms
+2025-04-27 17:26:20.881 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2025-04-27 17:26:20.996 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 114.6572ms
+2025-04-27 17:26:21.020 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - null null
+2025-04-27 17:26:21.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - null null
+2025-04-27 17:26:21.022 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 17:26:21.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-27 17:26:21.022 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 17:26:21.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.js - null null
+2025-04-27 17:26:21.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.css - null null
+2025-04-27 17:26:21.074 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.js - 200 null application/javascript;charset=utf-8 52.5516ms
+2025-04-27 17:26:21.097 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-27 17:26:21.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.css - 200 202 text/css 77.9448ms
+2025-04-27 17:26:21.118 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 95.664ms
+2025-04-27 17:26:21.127 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-27 17:26:21.127 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-27 17:26:21.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 112.354ms
+2025-04-27 17:26:21.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - 200 154949 text/css 113.1696ms
+2025-04-27 17:26:21.173 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 151.1815ms
+2025-04-27 17:26:21.188 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-27 17:26:21.190 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 168.5214ms
+2025-04-27 17:26:21.378 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 17:26:21.552 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 174.7931ms
+2025-04-27 17:26:31.823 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/1 - null null
+2025-04-27 17:26:31.837 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:26:31.890 +05:30 [INF] Route matched with {action = "GetTaskById", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 17:26:33.723 +05:30 [ERR] An error occurred using the connection to database 'Task' on server 'NIRIKSHA\SQLEXPRESS'.
+2025-04-27 17:26:33.784 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskManagementAPI.DataBase.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4e6faf4c-ae0e-43e2-b7bf-5b563f5d22bd
+Error Number:-2146893019,State:0,Class:20
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:4e6faf4c-ae0e-43e2-b7bf-5b563f5d22bd
+Error Number:-2146893019,State:0,Class:20
+2025-04-27 17:26:33.891 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI) in 1995.1388ms
+2025-04-27 17:26:33.897 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:26:33.902 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the login process. (provider: SSL Provider, error: 0 - The certificate chain was issued by an authority that is not trusted.)
+ ---> System.ComponentModel.Win32Exception (0x80090325): The certificate chain was issued by an authority that is not trusted.
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.SNIWritePacket(PacketHandle packet, UInt32& sniError, Boolean canAccumulate, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WriteSni(Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParserStateObject.WritePacket(Byte flushMode, Boolean canAccumulate)
+   at Microsoft.Data.SqlClient.TdsParser.TdsLogin(SqlLogin rec, FeatureExtension requestedFeatures, SessionData recoverySessionData, FederatedAuthenticationFeatureExtensionData fedAuthFeatureExtensionData, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.Login(ServerInfo server, TimeoutTimer timeout, String newPassword, SecureString newSecurePassword, SqlConnectionEncryptOption encrypt)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TaskManagementAPI.Controllers.TaskManagementController.GetTaskById(Int32 id) in C:\Users\nirik\source\repos\TaskManagementAPI\Controllers\TaskManagementController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:4e6faf4c-ae0e-43e2-b7bf-5b563f5d22bd
+Error Number:-2146893019,State:0,Class:20
+2025-04-27 17:26:33.970 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/1 - 500 null text/plain; charset=utf-8 2148.0754ms
+2025-04-27 17:36:03.130 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 17:36:03.191 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 17:36:03.196 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 17:36:03.197 +05:30 [INF] Hosting environment: Development
+2025-04-27 17:36:03.198 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 17:36:04.225 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - null null
+2025-04-27 17:36:04.418 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - 301 0 null 207.0613ms
+2025-04-27 17:36:04.426 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2025-04-27 17:36:04.578 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 152.3447ms
+2025-04-27 17:36:04.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - null null
+2025-04-27 17:36:04.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.css - null null
+2025-04-27 17:36:04.616 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 17:36:04.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - null null
+2025-04-27 17:36:04.608 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.js - null null
+2025-04-27 17:36:04.606 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-27 17:36:04.617 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 17:36:04.638 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.js - 200 null application/javascript;charset=utf-8 30.123ms
+2025-04-27 17:36:04.669 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-27 17:36:04.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.css - 200 202 text/css 77.3495ms
+2025-04-27 17:36:04.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 88.8263ms
+2025-04-27 17:36:04.725 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-27 17:36:04.725 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-27 17:36:04.737 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 131.8602ms
+2025-04-27 17:36:04.737 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - 200 154949 text/css 132.3043ms
+2025-04-27 17:36:04.771 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-27 17:36:04.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 169.021ms
+2025-04-27 17:36:04.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 158.2668ms
+2025-04-27 17:36:05.074 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 17:36:05.243 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.2813ms
+2025-04-27 17:36:14.175 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/1 - null null
+2025-04-27 17:36:14.194 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:36:14.234 +05:30 [INF] Route matched with {action = "GetTaskById", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 17:36:16.382 +05:30 [ERR] Failed executing DbCommand (112ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[AssignedUserId], [t].[Description], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-04-27 17:36:16.442 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskManagementAPI.DataBase.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'AssignedUserId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c7e4ca54-cc0e-436b-ae5b-9b76a71cdb9c
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'AssignedUserId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c7e4ca54-cc0e-436b-ae5b-9b76a71cdb9c
+Error Number:207,State:1,Class:16
+2025-04-27 17:36:16.534 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI) in 2291.3806ms
+2025-04-27 17:36:16.542 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:36:16.550 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'AssignedUserId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TaskManagementAPI.Controllers.TaskManagementController.GetTaskById(Int32 id) in C:\Users\nirik\source\repos\TaskManagementAPI\Controllers\TaskManagementController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:c7e4ca54-cc0e-436b-ae5b-9b76a71cdb9c
+Error Number:207,State:1,Class:16
+2025-04-27 17:36:16.590 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/1 - 500 null text/plain; charset=utf-8 2416.0127ms
+2025-04-27 17:40:16.336 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 17:40:16.377 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 17:40:16.381 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 17:40:16.383 +05:30 [INF] Hosting environment: Development
+2025-04-27 17:40:16.384 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 17:40:17.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - null null
+2025-04-27 17:40:17.450 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - 301 0 null 146.2422ms
+2025-04-27 17:40:17.458 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2025-04-27 17:40:17.550 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 92.3238ms
+2025-04-27 17:40:17.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - null null
+2025-04-27 17:40:17.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-27 17:40:17.567 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 17:40:17.567 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 17:40:17.567 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.js - null null
+2025-04-27 17:40:17.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.css - null null
+2025-04-27 17:40:17.584 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.js - 200 null application/javascript;charset=utf-8 17.1192ms
+2025-04-27 17:40:17.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - null null
+2025-04-27 17:40:17.618 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 51.1958ms
+2025-04-27 17:40:17.619 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-27 17:40:17.629 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.css - 200 202 text/css 62.2522ms
+2025-04-27 17:40:17.637 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-27 17:40:17.637 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-27 17:40:17.644 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 77.6362ms
+2025-04-27 17:40:17.644 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - 200 154949 text/css 77.7869ms
+2025-04-27 17:40:17.665 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-27 17:40:17.666 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 99.618ms
+2025-04-27 17:40:17.683 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 116.3838ms
+2025-04-27 17:40:17.864 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 17:40:17.996 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.259ms
+2025-04-27 17:40:32.278 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/1 - null null
+2025-04-27 17:40:32.287 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:40:32.325 +05:30 [INF] Route matched with {action = "GetTaskById", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 17:40:34.294 +05:30 [INF] Executed DbCommand (116ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Description], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-04-27 17:40:34.351 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-04-27 17:40:34.438 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI) in 2104.6156ms
+2025-04-27 17:40:34.442 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:40:34.456 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/1 - 404 null application/problem+json; charset=utf-8 2177.9ms
+2025-04-27 17:40:47.153 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/user/1 - null null
+2025-04-27 17:40:47.157 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 17:40:47.166 +05:30 [INF] Route matched with {action = "GetTasksByUserId", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTasksByUserId(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 17:40:47.228 +05:30 [ERR] Failed executing DbCommand (10ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-04-27 17:40:47.266 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskManagementAPI.DataBase.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Password'.
+Invalid column name 'Role'.
+Invalid column name 'Username'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:cad5dd6c-f39d-4c6e-88b0-a3ffc91d2c28
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Password'.
+Invalid column name 'Role'.
+Invalid column name 'Username'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:cad5dd6c-f39d-4c6e-88b0-a3ffc91d2c28
+Error Number:207,State:1,Class:16
+2025-04-27 17:40:47.345 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI) in 175.6421ms
+2025-04-27 17:40:47.347 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 17:40:47.354 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Password'.
+Invalid column name 'Role'.
+Invalid column name 'Username'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId(Int32 userId) in C:\Users\nirik\source\repos\TaskManagementAPI\Controllers\TaskManagementController.cs:line 58
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:cad5dd6c-f39d-4c6e-88b0-a3ffc91d2c28
+Error Number:207,State:1,Class:16
+2025-04-27 17:40:47.393 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/user/1 - 500 null text/plain; charset=utf-8 240.8551ms
+2025-04-27 17:45:40.044 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 17:45:40.093 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 17:45:40.099 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 17:45:40.101 +05:30 [INF] Hosting environment: Development
+2025-04-27 17:45:40.103 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 17:45:40.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - null null
+2025-04-27 17:45:40.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - 301 0 null 188.9159ms
+2025-04-27 17:45:40.893 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2025-04-27 17:45:40.994 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 100.6546ms
+2025-04-27 17:45:41.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - null null
+2025-04-27 17:45:41.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.css - null null
+2025-04-27 17:45:41.010 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - null null
+2025-04-27 17:45:41.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.js - null null
+2025-04-27 17:45:41.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-27 17:45:41.034 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.js - 200 null application/javascript;charset=utf-8 22.3569ms
+2025-04-27 17:45:41.012 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 17:45:41.021 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 17:45:41.055 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-27 17:45:41.058 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.css - 200 202 text/css 47.4211ms
+2025-04-27 17:45:41.081 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 69.1047ms
+2025-04-27 17:45:41.088 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-27 17:45:41.088 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-27 17:45:41.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 87.2303ms
+2025-04-27 17:45:41.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - 200 154949 text/css 88.5744ms
+2025-04-27 17:45:41.124 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-27 17:45:41.126 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 115.9463ms
+2025-04-27 17:45:41.157 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 135.7572ms
+2025-04-27 17:45:41.356 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 17:45:41.471 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 115.6242ms
+2025-04-27 17:45:48.462 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/1 - null null
+2025-04-27 17:45:48.473 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:45:48.522 +05:30 [INF] Route matched with {action = "GetTaskById", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 17:45:50.453 +05:30 [INF] Executed DbCommand (82ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Description], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-04-27 17:45:50.506 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-04-27 17:45:50.576 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI) in 2046.5013ms
+2025-04-27 17:45:50.579 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:45:50.589 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/1 - 404 null application/problem+json; charset=utf-8 2127.2599ms
+2025-04-27 17:46:01.795 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/user/1 - null null
+2025-04-27 17:46:01.800 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 17:46:01.809 +05:30 [INF] Route matched with {action = "GetTasksByUserId", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTasksByUserId(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 17:46:01.871 +05:30 [ERR] Failed executing DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-04-27 17:46:01.914 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskManagementAPI.DataBase.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Username'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c2b49c54-67b5-4231-8f0c-d96f10a2a6aa
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Username'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c2b49c54-67b5-4231-8f0c-d96f10a2a6aa
+Error Number:207,State:1,Class:16
+2025-04-27 17:46:02.008 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI) in 197.1324ms
+2025-04-27 17:46:02.011 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 17:46:02.018 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Username'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId(Int32 userId) in C:\Users\nirik\source\repos\TaskManagementAPI\Controllers\TaskManagementController.cs:line 58
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:c2b49c54-67b5-4231-8f0c-d96f10a2a6aa
+Error Number:207,State:1,Class:16
+2025-04-27 17:46:02.064 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/user/1 - 500 null text/plain; charset=utf-8 268.6063ms
+2025-04-27 17:48:13.903 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 17:48:13.952 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 17:48:13.960 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 17:48:13.962 +05:30 [INF] Hosting environment: Development
+2025-04-27 17:48:13.963 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 17:48:15.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - null null
+2025-04-27 17:48:15.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - 301 0 null 240.409ms
+2025-04-27 17:48:15.318 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2025-04-27 17:48:15.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 120.1856ms
+2025-04-27 17:48:15.455 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - null null
+2025-04-27 17:48:15.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.js - null null
+2025-04-27 17:48:15.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - null null
+2025-04-27 17:48:15.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.js - 200 null application/javascript;charset=utf-8 21.3774ms
+2025-04-27 17:48:15.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.css - null null
+2025-04-27 17:48:15.456 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-27 17:48:15.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 17:48:15.469 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 17:48:15.499 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-27 17:48:15.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.css - 200 202 text/css 45.8784ms
+2025-04-27 17:48:15.526 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 63.2029ms
+2025-04-27 17:48:15.532 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-27 17:48:15.532 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-27 17:48:15.543 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - 200 154949 text/css 87.2154ms
+2025-04-27 17:48:15.543 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 86.6421ms
+2025-04-27 17:48:15.563 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-27 17:48:15.564 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 108.6486ms
+2025-04-27 17:48:15.583 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 114.3234ms
+2025-04-27 17:48:15.758 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 17:48:15.884 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.7648ms
+2025-04-27 17:48:26.228 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/user/1 - null null
+2025-04-27 17:48:26.237 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 17:48:26.273 +05:30 [INF] Route matched with {action = "GetTasksByUserId", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTasksByUserId(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 17:48:27.750 +05:30 [INF] Executed DbCommand (74ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-04-27 17:48:27.784 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.User, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-27 17:48:27.826 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI) in 1546.6856ms
+2025-04-27 17:48:27.829 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 17:48:27.838 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/user/1 - 200 null application/json; charset=utf-8 1609.7407ms
+2025-04-27 17:48:39.327 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/1 - null null
+2025-04-27 17:48:39.331 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:48:39.339 +05:30 [INF] Route matched with {action = "GetTaskById", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 17:48:39.417 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Description], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-04-27 17:48:39.422 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-04-27 17:48:39.452 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI) in 110.834ms
+2025-04-27 17:48:39.454 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-27 17:48:39.456 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/1 - 404 null application/problem+json; charset=utf-8 129.1206ms
+2025-04-27 18:02:00.243 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 18:02:00.303 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 18:02:00.307 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 18:02:00.310 +05:30 [INF] Hosting environment: Development
+2025-04-27 18:02:00.311 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 18:02:01.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger - null null
+2025-04-27 18:02:01.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger - 301 0 null 226.6471ms
+2025-04-27 18:02:01.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.html - null null
+2025-04-27 18:02:01.790 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.html - 200 null text/html;charset=utf-8 136.0273ms
+2025-04-27 18:02:01.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - null null
+2025-04-27 18:02:01.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - null null
+2025-04-27 18:02:01.830 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 18:02:01.826 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.js - null null
+2025-04-27 18:02:01.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/index.css - null null
+2025-04-27 18:02:01.845 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.js - 200 null application/javascript;charset=utf-8 24.8582ms
+2025-04-27 18:02:01.816 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-27 18:02:01.830 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 18:02:01.877 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-04-27 18:02:01.879 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/index.css - 200 202 text/css 62.4825ms
+2025-04-27 18:02:01.902 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 71.8005ms
+2025-04-27 18:02:01.915 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-27 18:02:01.915 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-27 18:02:01.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 104.7011ms
+2025-04-27 18:02:01.921 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui.css - 200 154949 text/css 104.967ms
+2025-04-27 18:02:01.962 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 132.0274ms
+2025-04-27 18:02:01.976 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-27 18:02:01.978 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/swagger-ui-bundle.js - 200 1466908 text/javascript 161.5914ms
+2025-04-27 18:02:02.166 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 18:02:02.318 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.5564ms
+2025-04-27 18:03:25.134 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/user/1 - null null
+2025-04-27 18:03:25.158 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 18:03:25.218 +05:30 [INF] Route matched with {action = "GetTasksByUserId", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTasksByUserId(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 18:04:36.062 +05:30 [INF] Executed DbCommand (97ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-04-27 18:04:50.824 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.User, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-27 18:04:50.898 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI) in 85665.7151ms
+2025-04-27 18:04:50.901 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 18:04:50.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/user/1 - 200 null application/json; charset=utf-8 85780.7945ms
+2025-04-27 18:05:41.527 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 18:05:41.589 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 18:05:41.593 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 18:05:41.595 +05:30 [INF] Hosting environment: Development
+2025-04-27 18:05:41.596 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 18:05:42.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 18:05:42.615 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 18:05:42.661 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 53.7501ms
+2025-04-27 18:05:42.720 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.5821ms
+2025-04-27 18:05:42.833 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 18:05:43.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 191.8961ms
+2025-04-27 18:05:51.472 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/user/1 - null null
+2025-04-27 18:05:51.489 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 18:05:51.535 +05:30 [INF] Route matched with {action = "GetTasksByUserId", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTasksByUserId(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 18:06:03.463 +05:30 [INF] Executed DbCommand (85ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Password], [u].[Role], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__userId_0
+2025-04-27 18:19:16.158 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 18:19:16.250 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 18:19:16.257 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 18:19:16.260 +05:30 [INF] Hosting environment: Development
+2025-04-27 18:19:16.263 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 18:19:17.257 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 18:19:17.257 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 18:19:17.321 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 75.3556ms
+2025-04-27 18:19:17.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 141.5332ms
+2025-04-27 18:19:17.451 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 18:19:17.646 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 194.9198ms
+2025-04-27 18:20:40.365 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/user/1 - null null
+2025-04-27 18:20:40.389 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 18:20:40.434 +05:30 [INF] Route matched with {action = "GetTasksByUserId", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTasksByUserId(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 18:20:58.945 +05:30 [INF] Executed DbCommand (94ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Description], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2025-04-27 20:17:34.762 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 20:17:34.825 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 20:17:34.831 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 20:17:34.833 +05:30 [INF] Hosting environment: Development
+2025-04-27 20:17:34.835 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 20:17:35.885 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 20:17:35.885 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 20:17:35.927 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 55.0436ms
+2025-04-27 20:17:36.005 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 134.3856ms
+2025-04-27 20:17:36.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 20:17:36.256 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 156.3453ms
+2025-04-27 20:18:20.382 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/user/1 - null null
+2025-04-27 20:18:20.398 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 20:18:20.441 +05:30 [INF] Route matched with {action = "GetTasksByUserId", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTasksByUserId(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 20:21:27.298 +05:30 [INF] Executed DbCommand (95ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[Description], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2025-04-27 20:24:55.328 +05:30 [ERR] Sequence contains no elements.
+2025-04-27 20:24:55.432 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI) in 394983.3563ms
+2025-04-27 20:24:55.438 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 20:24:55.451 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: Failed to retrive users.
+ ---> System.InvalidOperationException: Sequence contains no elements.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId(Int32 userId) in C:\Users\nirik\source\repos\TaskManagementAPI\Controllers\TaskManagementController.cs:line 71
+   --- End of inner exception stack trace ---
+   at TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId(Int32 userId) in C:\Users\nirik\source\repos\TaskManagementAPI\Controllers\TaskManagementController.cs:line 84
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-04-27 20:24:55.576 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/user/1 - 500 null text/plain; charset=utf-8 395194.3184ms
+2025-04-27 22:41:54.971 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 22:41:55.024 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 22:41:55.029 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 22:41:55.030 +05:30 [INF] Hosting environment: Development
+2025-04-27 22:41:55.031 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 22:41:55.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 22:41:55.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 22:41:55.994 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 38.5673ms
+2025-04-27 22:41:56.049 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.7874ms
+2025-04-27 22:41:56.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 22:41:56.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 184.5585ms
+2025-04-27 22:42:05.184 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/user/1 - null null
+2025-04-27 22:42:05.204 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 22:42:05.247 +05:30 [INF] Route matched with {action = "GetTasksByUserId", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTasksByUserId(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-27 22:42:11.000 +05:30 [INF] Executed DbCommand (90ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[Description], [t].[Title], [t].[UserId]
+FROM [Tasks] AS [t]
+WHERE [t].[UserId] = @__userId_0
+2025-04-27 22:42:16.467 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-04-27 22:42:16.610 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI) in 11353.3575ms
+2025-04-27 22:42:16.614 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
+2025-04-27 22:42:16.628 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/user/1 - 404 null application/problem+json; charset=utf-8 11444.496ms
+2025-04-27 23:44:00.839 +05:30 [INF] User profile is available. Using 'C:\Users\nirik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-27 23:44:01.048 +05:30 [INF] Creating key {f9936369-f8a9-44d3-9cb5-e7b4ccc66550} with creation date 2025-04-27 18:14:01Z, activation date 2025-04-27 18:14:00Z, and expiration date 2025-07-26 18:14:00Z.
+2025-04-27 23:44:01.067 +05:30 [INF] Writing data to file 'C:\Users\nirik\AppData\Local\ASP.NET\DataProtection-Keys\key-f9936369-f8a9-44d3-9cb5-e7b4ccc66550.xml'.
+2025-04-27 23:44:01.512 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 23:44:01.514 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 23:44:01.519 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 23:44:01.521 +05:30 [INF] Hosting environment: Development
+2025-04-27 23:44:01.522 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 23:44:02.610 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 23:44:02.610 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 23:44:02.659 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 60.4283ms
+2025-04-27 23:44:02.750 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 152.519ms
+2025-04-27 23:44:02.833 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 23:44:03.283 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 450.4392ms
+2025-04-27 23:49:11.983 +05:30 [INF] User profile is available. Using 'C:\Users\nirik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-27 23:49:12.452 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 23:49:12.455 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 23:49:12.461 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 23:49:12.464 +05:30 [INF] Hosting environment: Development
+2025-04-27 23:49:12.465 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 23:49:13.763 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 23:49:13.763 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 23:49:13.810 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 60.393ms
+2025-04-27 23:49:13.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 122.7347ms
+2025-04-27 23:49:13.927 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 23:49:14.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 385.143ms
+2025-04-27 23:50:06.815 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/auth/login - application/json 103
+2025-04-27 23:50:06.860 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI)'
+2025-04-27 23:50:06.907 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagementAPI.Models.User) on controller TaskManagementAPI.Controllers.AuthController (TaskManagementAPI).
+2025-04-27 23:56:41.789 +05:30 [INF] User profile is available. Using 'C:\Users\nirik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-27 23:56:42.201 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-27 23:56:42.206 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-27 23:56:42.211 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-27 23:56:42.212 +05:30 [INF] Hosting environment: Development
+2025-04-27 23:56:42.213 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-27 23:56:42.774 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-27 23:56:42.774 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-27 23:56:42.835 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 68.0686ms
+2025-04-27 23:56:42.885 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.6684ms
+2025-04-27 23:56:43.501 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-27 23:56:43.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 233.1241ms
+2025-04-27 23:57:03.486 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/auth/login - application/json 103
+2025-04-27 23:57:03.506 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI)'
+2025-04-27 23:57:03.525 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagementAPI.Models.User) on controller TaskManagementAPI.Controllers.AuthController (TaskManagementAPI).
+2025-04-27 23:57:04.310 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-04-27 23:57:04.350 +05:30 [INF] Executed action TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI) in 819.7841ms
+2025-04-27 23:57:04.352 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI)'
+2025-04-27 23:57:04.355 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7224/api/auth/login - 401 null application/problem+json; charset=utf-8 869.5987ms
