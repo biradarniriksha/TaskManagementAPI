@@ -16,7 +16,7 @@ namespace TaskManagementAPI.Middlewares
         {
             try
             {
-                await _next(context); // continue pipeline
+                await _next(context); 
             }
             catch (Exception ex)
             {
@@ -25,7 +25,6 @@ namespace TaskManagementAPI.Middlewares
                 await HandleExceptionAsync(context, ex);
             }
 
-            // Also handle status codes manually like 401, 403 after _next
             if (!context.Response.HasStarted &&
                 (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized ||
                  context.Response.StatusCode == (int)HttpStatusCode.Forbidden))
