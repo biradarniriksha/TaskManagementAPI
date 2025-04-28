@@ -444,3 +444,14 @@ RolesAuthorizationRequirement:User.IsInRole must be true for one of the followin
 2025-04-28 18:55:14.892 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/ - 404 0 null 88.8006ms
 2025-04-28 18:55:14.904 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5235/, Response status code: 404
 2025-04-28 18:56:22.410 +05:30 [INF] Application is shutting down...
+2025-04-28 23:10:31.577 +05:30 [INF] Saved 4 entities to in-memory store.
+2025-04-28 23:10:31.808 +05:30 [INF] User profile is available. Using 'C:\Users\nirik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-28 23:10:31.922 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-28 23:10:31.925 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 23:10:31.927 +05:30 [INF] Hosting environment: Development
+2025-04-28 23:10:31.928 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-28 23:10:48.314 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/index.html - null null
+2025-04-28 23:10:48.423 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/index.html - 200 null text/html;charset=utf-8 117.5325ms
+2025-04-28 23:10:48.787 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - null null
+2025-04-28 23:10:48.883 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.2488ms
+2025-04-28 23:14:41.288 +05:30 [INF] Application is shutting down...
