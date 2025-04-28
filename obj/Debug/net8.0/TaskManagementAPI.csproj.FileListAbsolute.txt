@@ -182,3 +182,4 @@ C:\Users\nirik\source\repos\TaskManagementAPI\obj\Debug\net8.0\refint\TaskManage
 C:\Users\nirik\source\repos\TaskManagementAPI\obj\Debug\net8.0\TaskManagementAPI.pdb
 C:\Users\nirik\source\repos\TaskManagementAPI\obj\Debug\net8.0\TaskManagementAPI.genruntimeconfig.cache
 C:\Users\nirik\source\repos\TaskManagementAPI\obj\Debug\net8.0\ref\TaskManagementAPI.dll
+C:\Users\nirik\source\repos\TaskManagementAPI\obj\Debug\net8.0\TaskManagementAPI.sourcelink.json

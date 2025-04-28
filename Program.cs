@@ -115,16 +115,15 @@ using (var scope = app.Services.CreateScope())
 
         if (string.IsNullOrEmpty(connectionString))
         {
-            // For InMemory - ensure database is created and seeded
+            // For InMemory 
             context.Database.EnsureCreated();
         }
         else
         {
-            // For SQL Server - apply migrations
+            // For SQL Server
             context.Database.Migrate();
         }
 
-        // Verify seeding
         Console.WriteLine($"Database contains {context.Users.Count()} users");
     }
     catch (Exception ex)
@@ -134,10 +133,10 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-
 app.UseAuthentication();
 
 app.UseAuthorization();
+
 app.UseHttpsRedirection();
 
 app.MapControllers();

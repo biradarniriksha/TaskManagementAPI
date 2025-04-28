@@ -26,11 +26,15 @@ namespace TaskManagementAPI.Controllers
         [Authorize(Roles ="Admin")]
         public async Task<IActionResult> CreateTask([FromBody] TaskItem task)
         {
+
+            if (string.IsNullOrEmpty(task.Title))
+                return BadRequest("Title is required");
+
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             try
             {
-                if (!ModelState.IsValid)
-                    return BadRequest(ModelState);
-
                 _context.Tasks.Add(task);
                 await _context.SaveChangesAsync();
                 return CreatedAtAction(nameof(GetTaskById), new { id = task.Id }, task);
@@ -76,7 +80,7 @@ namespace TaskManagementAPI.Controllers
             {
                 var tasks = await _context.Tasks
                     .Where(t => t.UserId == userId)
-                    .SingleOrDefaultAsync();
+                    .ToListAsync();
 
                 if (tasks == null)
                     return NotFound();
@@ -96,7 +100,6 @@ namespace TaskManagementAPI.Controllers
         {
             return Ok(new
             {
-                UserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value,
                 Username = User.FindFirst(ClaimTypes.Name)?.Value,
                 Role = User.FindFirst(ClaimTypes.Role)?.Value,
                 AllClaims = User.Claims.Select(c => new { c.Type, c.Value })

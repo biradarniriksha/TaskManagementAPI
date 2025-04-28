@@ -71,3 +71,65 @@ System.IO.IOException: Failed to bind to address http://127.0.0.1:5235: address 
 2025-04-28 19:42:58.938 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI) in 35.3296ms
 2025-04-28 19:42:58.942 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTasksByUserId (TaskManagementAPI)'
 2025-04-28 19:42:58.944 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5235/api/tasks/user/2 - 200 null application/json; charset=utf-8 78.4024ms
+2025-04-28 20:56:59.981 +05:30 [INF] Application is shutting down...
+2025-04-28 20:57:21.630 +05:30 [INF] Saved 4 entities to in-memory store.
+2025-04-28 20:57:22.207 +05:30 [INF] User profile is available. Using 'C:\Users\nirik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-28 20:57:22.656 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-28 20:57:22.658 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-28 20:57:22.663 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 20:57:22.666 +05:30 [INF] Hosting environment: Development
+2025-04-28 20:57:22.667 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-28 20:57:25.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-28 20:57:25.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-28 20:57:25.388 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 118.6909ms
+2025-04-28 20:57:25.492 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 224.9864ms
+2025-04-28 20:57:25.551 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-28 20:57:25.828 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 277.2258ms
+2025-04-28 21:01:17.344 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/auth/login - application/json 103
+2025-04-28 21:01:17.533 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI)'
+2025-04-28 21:01:17.596 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManagementAPI.Models.User) on controller TaskManagementAPI.Controllers.AuthController (TaskManagementAPI).
+2025-04-28 21:01:28.967 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType1`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-28 21:01:29.039 +05:30 [INF] Executed action TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI) in 11420.7572ms
+2025-04-28 21:01:29.042 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI)'
+2025-04-28 21:01:29.047 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7224/api/auth/login - 200 null application/json; charset=utf-8 11703.3639ms
+2025-04-28 21:01:57.530 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/tasks/1 - null null
+2025-04-28 21:01:57.642 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-28 21:01:57.655 +05:30 [INF] Route matched with {action = "GetTaskById", controller = "TaskManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTaskById(Int32) on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-28 21:02:00.146 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.TaskItem'.
+2025-04-28 21:02:00.157 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI) in 2497.8463ms
+2025-04-28 21:02:00.159 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.GetTaskById (TaskManagementAPI)'
+2025-04-28 21:02:00.161 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/tasks/1 - 200 null application/json; charset=utf-8 2631.1855ms
+2025-04-28 21:02:09.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/tasks/debug-auth - null null
+2025-04-28 21:02:09.924 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.DebugAuth (TaskManagementAPI)'
+2025-04-28 21:02:09.928 +05:30 [INF] Route matched with {action = "DebugAuth", controller = "TaskManagement"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DebugAuth() on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-28 21:02:12.549 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`4[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType4`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-28 21:02:12.569 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.DebugAuth (TaskManagementAPI) in 2636.8883ms
+2025-04-28 21:02:12.571 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.DebugAuth (TaskManagementAPI)'
+2025-04-28 21:02:12.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/tasks/debug-auth - 200 null application/json; charset=utf-8 2663.3428ms
+2025-04-28 21:02:49.279 +05:30 [INF] Saved 4 entities to in-memory store.
+2025-04-28 21:02:49.854 +05:30 [INF] User profile is available. Using 'C:\Users\nirik\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-04-28 21:02:50.291 +05:30 [INF] Now listening on: https://localhost:7224
+2025-04-28 21:02:50.293 +05:30 [INF] Now listening on: http://localhost:5235
+2025-04-28 21:02:50.298 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-28 21:02:50.300 +05:30 [INF] Hosting environment: Development
+2025-04-28 21:02:50.301 +05:30 [INF] Content root path: C:\Users\nirik\source\repos\TaskManagementAPI
+2025-04-28 21:02:52.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_vs/browserLink - null null
+2025-04-28 21:02:52.620 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-28 21:02:52.675 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_framework/aspnetcore-browser-refresh.js - 200 13770 application/javascript; charset=utf-8 68.3983ms
+2025-04-28 21:02:52.727 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.7874ms
+2025-04-28 21:02:52.776 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - null null
+2025-04-28 21:02:52.971 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 195.0133ms
+2025-04-28 21:03:09.922 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7224/api/auth/login - application/json 103
+2025-04-28 21:03:10.092 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI)'
+2025-04-28 21:03:10.135 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManagementAPI.Models.User) on controller TaskManagementAPI.Controllers.AuthController (TaskManagementAPI).
+2025-04-28 21:03:13.590 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType1`3[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-04-28 21:03:13.641 +05:30 [INF] Executed action TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI) in 3496.0443ms
+2025-04-28 21:03:13.642 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.AuthController.Login (TaskManagementAPI)'
+2025-04-28 21:03:13.646 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7224/api/auth/login - 200 null application/json; charset=utf-8 3723.9492ms
+2025-04-28 21:03:37.970 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7224/api/tasks/debug-auth - null null
+2025-04-28 21:03:38.070 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskManagementController.DebugAuth (TaskManagementAPI)'
+2025-04-28 21:03:38.079 +05:30 [INF] Route matched with {action = "DebugAuth", controller = "TaskManagement"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DebugAuth() on controller TaskManagementAPI.Controllers.TaskManagementController (TaskManagementAPI).
+2025-04-28 21:03:40.681 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[<>f__AnonymousType4`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-04-28 21:03:40.702 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskManagementController.DebugAuth (TaskManagementAPI) in 2619.7838ms
+2025-04-28 21:03:40.707 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskManagementController.DebugAuth (TaskManagementAPI)'
+2025-04-28 21:03:40.709 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7224/api/tasks/debug-auth - 200 null application/json; charset=utf-8 2738.7927ms
